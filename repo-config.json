@@ -2,10 +2,11 @@
   "scanSettings": {
     "configMode": "AUTO",
     "configExternalURL": "",
+    "enableLicenseViolations": true,
     "baseBranches": []
   },
   "scanSettingsSAST": {
-    "enableScan": true,
+    "enableScan": false,
     "scanPullRequests": true,
     "incrementalScan": true,
     "baseBranches": [],
@@ -30,15 +31,20 @@
   },
   "remediateSettings": {
     "workflowRules": {
-      "enabled": true
-    }
+      "enabled": false
+    },
+    "enableRenovate": true,
+    "extends": [
+      "config:recommended",
+      "mergeConfidence:all-badges",
+      "github>GarySegal-Mend-Democorp/whitesource-config:smart-merge"
+      ]
   },
   "imageSettings": {
     "imageTracing": {
-      "enableImageTracingPR": false,
-      "addRepositoryCoordinate": false,
-      "addDockerfilePath": false,
-      "addMendIdentifier": false
+      "enableImageTracingPR": true,
+      "addRepositoryCoordinate": true,
+      "addDockerfilePath": true
     }
   }
 }
