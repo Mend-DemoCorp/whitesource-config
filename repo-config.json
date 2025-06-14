@@ -7,7 +7,7 @@
     "baseBranches": []
   },
   "scanSettingsSAST": {
-    "enableScan": false,
+    "enableScan": true,
     "scanPullRequests": true,
     "incrementalScan": true,
     "baseBranches": [],
@@ -20,14 +20,14 @@
   },
   "checkRunSettingsSAST": {
     "checkRunConclusionLevel": "failure",
-    "severityThreshold": "high"
+    "severityThreshold": "low"
   },
   "issueSettings": {
     "minSeverityLevel": "MEDIUM",
     "issueType": "DEPENDENCY"
   },
   "issueSettingsSAST": {
-    "minSeverityLevel": "high",
+    "minSeverityLevel": "low",
     "issueType": "repo"
   },
   "remediateSettings": {
