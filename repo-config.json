@@ -4,6 +4,8 @@
     "configExternalURL": "",
     "enableLicenseViolations": true,
     "enableReachability": true,
+    "exploitability": true,
+    "enableIaC" : true,
     "baseBranches": []
   },
   "scanSettingsSAST": {
